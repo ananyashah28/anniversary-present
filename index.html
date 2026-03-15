@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Anniversary Mom & Dad!</title>
+    <!-- Beautiful Google Fonts for a premium aesthetic -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Great+Vibes&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background floating hearts decoration -->
+    <div class="background-hearts" id="backgroundHearts"></div>
+
+    <div class="container">
+        <!-- Section 1: The Interactive Gift Box -->
+        <div id="gift-section" class="active">
+            <h1 class="instruction">Tap to Open Your Present!</h1>
+            <div class="gift-box" id="giftBox">
+                <div class="gift-lid"></div>
+                <div class="gift-ribbon-vertical"></div>
+                <div class="gift-ribbon-horizontal"></div>
+                <div class="gift-bow">
+                    <div class="bow-left"></div>
+                    <div class="bow-right"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2: Celebration Message & Interactive Letter (Revealed upon gift tap) -->
+        <div id="celebration-section" class="hidden">
+            <h1 class="anniversary-title">Happy Anniversary!</h1>
+            <h2 class="anniversary-subtitle">Mummy & Pappa</h2>
+
+            <!-- Interactive Envelope -->
+            <div class="envelope-wrapper" id="envelopeWrapper">
+                <p class="instruction-small">Tap to open your letter</p>
+                <div class="envelope" id="envelope">
+                    <div class="envelope-flap">
+                        <div class="wax-seal" id="waxSeal">
+                            <span>Love</span>
+                            <div class="wax-break top"></div>
+                            <div class="wax-break bottom"></div>
+                        </div>
+                    </div>
+                    <div class="envelope-body"></div>
+                </div>
+            </div>
+
+            <!-- The Letter (Moved outside to stay visible) -->
+            <div class="letter" id="letter">
+                <h3>Dearest Mom & Dad,</h3>
+                <p>Wishing you both endless love, joy, and many more beautiful years together. You two are the perfect example of true love, and I am so grateful for everything you do.</p>
+                <p>Thank you for showing me what a beautiful marriage looks like. Here's to a lifetime of happiness!</p>
+                <!-- Longer content to ensure scrolling works as requested -->
+                <p>Throughout the years, your dedication to each other has been an inspiration to our entire family. The way you handle challenges with grace and celebrate joys with laughter is truly remarkable.</p>
+                <p>May this anniversary be just another step in a journey filled with love and shared dreams. You both deserve all the happiness in the world.</p>
+                <p class="signature">With all my love,</p>
+            </div>
+
+            <!-- Memories Button (Moves below letter) -->
+            <button id="memoriesBtn" class="memories-btn hidden">View Memories</button>
+
+            <!-- Photo gallery (Revealed after clicking Memories button) -->
+            <div class="gallery hidden" id="gallery">
+                <div class="photo-frame"><img src="mom-dad/WhatsApp Image 2026-03-15 at 6.39.18 AM.jpeg" alt="Memory"><div class="photo-caption">Beautiful Journey</div></div>
+                <div class="photo-frame"><img src="mom-dad/WhatsApp Image 2026-03-15 at 6.39.19 AM (1).jpeg" alt="Memory"><div class="photo-caption">Together Forever</div></div>
+                <div class="photo-frame"><img src="mom-dad/WhatsApp Image 2026-03-15 at 6.39.19 AM.jpeg" alt="Memory"><div class="photo-caption">True Love</div></div>
+                <div class="photo-frame"><img src="mom-dad/WhatsApp Image 2026-03-15 at 6.39.20 AM (1).jpeg" alt="Memory"><div class="photo-caption">Joyful Times</div></div>
+                <div class="photo-frame"><img src="mom-dad/WhatsApp Image 2026-03-15 at 6.39.20 AM (2).jpeg" alt="Memory"><div class="photo-caption">Sweet Memories</div></div>
+                <div class="photo-frame"><img src="mom-dad/WhatsApp Image 2026-03-15 at 6.39.20 AM.jpeg" alt="Memory"><div class="photo-caption">Endless Happiness</div></div>
+                <div class="photo-frame"><img src="mom-dad/WhatsApp Image 2026-03-15 at 6.39.21 AM (1).jpeg" alt="Memory"><div class="photo-caption">Heart to Heart</div></div>
+                <div class="photo-frame"><img src="mom-dad/WhatsApp Image 2026-03-15 at 6.39.21 AM (2).jpeg" alt="Memory"><div class="photo-caption">Perfect Pair</div></div>
+                <div class="photo-frame"><img src="mom-dad/WhatsApp Image 2026-03-15 at 6.39.21 AM.jpeg" alt="Memory"><div class="photo-caption">Always Together</div></div>
+                <div class="photo-frame"><img src="mom-dad/WhatsApp Image 2026-03-15 at 6.39.22 AM (1).jpeg" alt="Memory"><div class="photo-caption">Love and Laughter</div></div>
+                <div class="photo-frame"><img src="mom-dad/WhatsApp Image 2026-03-15 at 6.39.22 AM (2).jpeg" alt="Memory"><div class="photo-caption">Cherished Moments</div></div>
+                <div class="photo-frame"><img src="mom-dad/WhatsApp Image 2026-03-15 at 6.39.22 AM.jpeg" alt="Memory"><div class="photo-caption">So Much Love</div></div>
+                <div class="photo-frame"><img src="mom-dad/WhatsApp Image 2026-03-15 at 6.39.23 AM (1).jpeg" alt="Memory"><div class="photo-caption">Best Parents Ever</div></div>
+                <div class="photo-frame"><img src="mom-dad/WhatsApp Image 2026-03-15 at 6.39.23 AM (2).jpeg" alt="Memory"><div class="photo-caption">A Lifetime of Love</div></div>
+                <div class="photo-frame"><img src="mom-dad/WhatsApp Image 2026-03-15 at 6.39.23 AM.jpeg" alt="Memory"><div class="photo-caption">Precious Times</div></div>
+                <div class="photo-frame"><img src="mom-dad/WhatsApp Image 2026-03-15 at 6.39.24 AM (1).jpeg" alt="Memory"><div class="photo-caption">Golden Years</div></div>
+                <div class="photo-frame"><img src="mom-dad/WhatsApp Image 2026-03-15 at 6.39.24 AM (2).jpeg" alt="Memory"><div class="photo-caption">Pure Joy</div></div>
+                <div class="photo-frame"><img src="mom-dad/WhatsApp Image 2026-03-15 at 6.39.24 AM (3).jpeg" alt="Memory"><div class="photo-caption">Inseparable</div></div>
+                <div class="photo-frame"><img src="mom-dad/WhatsApp Image 2026-03-15 at 6.39.24 AM.jpeg" alt="Memory"><div class="photo-caption">My Inspiration</div></div>
+                <div class="photo-frame"><img src="mom-dad/WhatsApp Image 2026-03-15 at 6.39.25 AM (1).jpeg" alt="Memory"><div class="photo-caption">Family First</div></div>
+                <div class="photo-frame"><img src="mom-dad/WhatsApp Image 2026-03-15 at 6.39.25 AM.jpeg" alt="Memory"><div class="photo-caption">Smiling Always</div></div>
+                <div class="photo-frame"><img src="mom-dad/WhatsApp Image 2026-03-15 at 6.39.26 AM (1).jpeg" alt="Memory"><div class="photo-caption">Happy Hearts</div></div>
+                <div class="photo-frame"><img src="mom-dad/WhatsApp Image 2026-03-15 at 6.39.26 AM (2).jpeg" alt="Memory"><div class="photo-caption">Classic Love</div></div>
+                <div class="photo-frame"><img src="mom-dad/WhatsApp Image 2026-03-15 at 6.39.26 AM.jpeg" alt="Memory"><div class="photo-caption">Unforgettable</div></div>
+                <div class="photo-frame"><img src="mom-dad/WhatsApp Image 2026-03-15 at 6.39.27 AM (1).jpeg" alt="Memory"><div class="photo-caption">Simply Beautiful</div></div>
+                <div class="photo-frame"><img src="mom-dad/WhatsApp Image 2026-03-15 at 6.39.27 AM (2).jpeg" alt="Memory"><div class="photo-caption">Our World</div></div>
+                <div class="photo-frame"><img src="mom-dad/WhatsApp Image 2026-03-15 at 6.39.27 AM.jpeg" alt="Memory"><div class="photo-caption">Kindred Spirits</div></div>
+                <div class="photo-frame"><img src="mom-dad/WhatsApp Image 2026-03-15 at 6.39.28 AM (1).jpeg" alt="Memory"><div class="photo-caption">Soulmates</div></div>
+                <div class="photo-frame"><img src="mom-dad/WhatsApp Image 2026-03-15 at 6.39.28 AM (2).jpeg" alt="Memory"><div class="photo-caption">Brighter Together</div></div>
+                <div class="photo-frame"><img src="mom-dad/WhatsApp Image 2026-03-15 at 6.39.28 AM.jpeg" alt="Memory"><div class="photo-caption">Everlasting Bond</div></div>
+                <div class="photo-frame"><img src="mom-dad/WhatsApp Image 2026-03-15 at 6.39.29 AM (1).jpeg" alt="Memory"><div class="photo-caption">Truly Blessed</div></div>
+                <div class="photo-frame"><img src="mom-dad/WhatsApp Image 2026-03-15 at 6.39.29 AM (2).jpeg" alt="Memory"><div class="photo-caption">Warming Hearts</div></div>
+                <div class="photo-frame"><img src="mom-dad/WhatsApp Image 2026-03-15 at 6.39.29 AM.jpeg" alt="Memory"><div class="photo-caption">Life's Best Gifts</div></div>
+                <div class="photo-frame"><img src="mom-dad/WhatsApp Image 2026-03-15 at 6.39.30 AM (1).jpeg" alt="Memory"><div class="photo-caption">Radiant Love</div></div>
+                <div class="photo-frame"><img src="mom-dad/WhatsApp Image 2026-03-15 at 6.39.30 AM (2).jpeg" alt="Memory"><div class="photo-caption">Forever Young</div></div>
+                <div class="photo-frame"><img src="mom-dad/WhatsApp Image 2026-03-15 at 6.39.30 AM.jpeg" alt="Memory"><div class="photo-caption">A Beautiful Life</div></div>
+                <div class="photo-frame"><img src="mom-dad/WhatsApp Image 2026-03-15 at 6.39.31 AM (1).jpeg" alt="Memory"><div class="photo-caption">Shared Dreams</div></div>
+                <div class="photo-frame"><img src="mom-dad/WhatsApp Image 2026-03-15 at 6.39.31 AM (2).jpeg" alt="Memory"><div class="photo-caption">Perfect Harmony</div></div>
+                <div class="photo-frame"><img src="mom-dad/WhatsApp Image 2026-03-15 at 6.39.31 AM.jpeg" alt="Memory"><div class="photo-caption">Pure Love</div></div>
+                <div class="photo-frame"><img src="mom-dad/WhatsApp Image 2026-03-15 at 6.39.32 AM (1).jpeg" alt="Memory"><div class="photo-caption">Infinite Joy</div></div>
+                <div class="photo-frame"><img src="mom-dad/WhatsApp Image 2026-03-15 at 6.39.32 AM.jpeg" alt="Memory"><div class="photo-caption">The Best Team</div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Interactivity Script -->
+    <script src="script.js"></script>
+</body>
+</html>
